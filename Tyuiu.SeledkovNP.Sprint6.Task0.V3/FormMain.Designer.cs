@@ -63,6 +63,7 @@ namespace Tyuiu.SeledkovNP.Sprint6.Task0.V3
             textBox1 = new TextBox();
             pictureBox1 = new PictureBox();
             button1 = new Button();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -115,5 +116,6 @@ namespace Tyuiu.SeledkovNP.Sprint6.Task0.V3
         private TextBox textBox1;
         private PictureBox pictureBox1;
         private Button button1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
