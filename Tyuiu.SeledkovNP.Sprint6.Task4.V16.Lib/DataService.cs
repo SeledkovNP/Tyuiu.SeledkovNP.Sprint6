@@ -5,7 +5,18 @@ namespace Tyuiu.SeledkovNP.Sprint6.Task4.V16.Lib
     {
         public double[] GetMassFunction(int startValue, int stopValue)
         {
-            throw new NotImplementedException();
+            double[] valueArray;
+            int len = stopValue - startValue + 1;
+            valueArray = new double[len];
+            double y;
+            int count = 0;
+            for (int x = startValue; x <= stopValue; x++)
+            {
+                y = Math.Round(Math.Cos(x) / (x - 0.4) + Math.Sin(x) * 8 * x + 2, 2);
+                valueArray[count] = y;
+                count++;
+            }
+            return valueArray;
         }
     }
 }
