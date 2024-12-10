@@ -38,7 +38,7 @@ namespace Tyuiu.SeledkovNP.Sprint6.Task6.V22.Lib
                         result = result.Substring(startIndex + 1, endIndex - startIndex - 1);
                     }
                 }
-                path = resStr;
+                path = result;
 
             }
             return path;
