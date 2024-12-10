@@ -65,7 +65,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.SeledkovNP.Sprint6.Ta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.SeledkovNP.Sprint6.Task6.V22", "Tyuiu.SeledkovNP.Sprint6.Task6.V22\Tyuiu.SeledkovNP.Sprint6.Task6.V22.csproj", "{99ABE977-B9F3-457A-8B56-30F4E712FDF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.SeledkovNP.Sprint6.Task7.V30", "Tyuiu.SeledkovNP.Sprint6.Task7.V30\Tyuiu.SeledkovNP.Sprint6.Task7.V30.csproj", "{FDFE6E15-9645-4B98-A41B-16A8AA6F6779}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.SeledkovNP.Sprint6.Task7.V30", "Tyuiu.SeledkovNP.Sprint6.Task7.V30\Tyuiu.SeledkovNP.Sprint6.Task7.V30.csproj", "{FDFE6E15-9645-4B98-A41B-16A8AA6F6779}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
