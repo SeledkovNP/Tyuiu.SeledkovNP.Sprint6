@@ -21,23 +21,28 @@ namespace Tyuiu.SeledkovNP.Sprint6.Task6.V22.Lib
                     
 
                     }
-                
-                
+
 
                 string input = resStr;
-                string result = input.Trim();
-                if (result.Length > 0)
-                {
-                    // Находим индексы первого и последнего символа, исключая символы-разделители
-                    int startIndex = result.IndexOf(result[0]);
-                    int endIndex = result.LastIndexOf(result[result.Length - 1]);
 
-                    // Если символы-разделители не найдены, оставляем всю строку
-                    if (startIndex != -1 && endIndex != -1)
-                    {
-                        result = result.Substring(startIndex + 1, endIndex - startIndex - 1);
-                    }
+                // Удаляем начальные и конечные пробельные символы
+                string result = input.Trim();
+
+                // Проверяем, есть ли пробелы в начале и в конце
+                if (result.StartsWith(" "))
+                {
+                    // Если первый символ - пробел, удаляем его и следующий за ним символ
+                    result = result.Substring(1);
                 }
+
+                if (result.EndsWith(" "))
+                {
+                    // Если последний символ - пробел, удаляем его и предыдущий символ
+                    result = result.Substring(0, result.Length - 1);
+                }
+
+
+
                 path = result;
 
             }
