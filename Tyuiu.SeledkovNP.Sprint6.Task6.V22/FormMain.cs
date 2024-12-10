@@ -52,7 +52,7 @@ namespace Tyuiu.SeledkovNP.Sprint6.Task6.V22
         private void Clik_open_Click(object sender, EventArgs e)     // загрузит в приложения (открыт)
         {
             string str = "**";
-            groupBoxOut.Text = ds.CollectTextFromFile(str, openFilePath);
+            groupBoxOut.Text = ds.CollectTextFromFile( openFilePath);
         }
 
         private void Van_Click(object sender, EventArgs e)      // кномка с аватаркой

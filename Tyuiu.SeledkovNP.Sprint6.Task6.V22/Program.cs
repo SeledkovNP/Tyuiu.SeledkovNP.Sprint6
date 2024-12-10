@@ -14,9 +14,6 @@ namespace Tyuiu.SeledkovNP.Sprint6.Task6.V22
             ApplicationConfiguration.Initialize();
             Application.Run(new FormMain());
 
-            
-
-
         }
     }
 }
