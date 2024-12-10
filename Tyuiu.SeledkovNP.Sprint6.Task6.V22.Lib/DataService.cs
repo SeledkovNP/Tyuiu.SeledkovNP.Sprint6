@@ -8,8 +8,8 @@ namespace Tyuiu.SeledkovNP.Sprint6.Task6.V22.Lib
         public string CollectTextFromFile(string path)
         {
 
-           
-                string resStr = "";
+
+            string resStr = "";
                 using (StreamReader reader = new StreamReader(path))
                 {
                     
@@ -17,14 +17,31 @@ namespace Tyuiu.SeledkovNP.Sprint6.Task6.V22.Lib
                 
                     while ((line = reader.ReadLine()) != null)
                     {
-                    resStr += "" + line.Split(' ')[0];
+                    resStr += " " + line.Split(' ')[0];
                     
 
                     }
                 
+                
+
+                string input = resStr;
+                string result = input.Trim();
+                if (result.Length > 0)
+                {
+                    // Находим индексы первого и последнего символа, исключая символы-разделители
+                    int startIndex = result.IndexOf(result[0]);
+                    int endIndex = result.LastIndexOf(result[result.Length - 1]);
+
+                    // Если символы-разделители не найдены, оставляем всю строку
+                    if (startIndex != -1 && endIndex != -1)
+                    {
+                        result = result.Substring(startIndex + 1, endIndex - startIndex - 1);
+                    }
+                }
                 path = resStr;
+
             }
-                return path;
+            return path;
 
 
             /*
