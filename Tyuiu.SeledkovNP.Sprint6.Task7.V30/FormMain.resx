@@ -194,6 +194,42 @@
   </data>
   <data name="textBox1.Text" xml:space="preserve">
     <value>Условие:
- Дан файл InPutFileTask6V22.txt который может находится в любом месте на диске. Загрузить файл в textBoxIn через openFileDialog. Вывести первое слово каждой строки в результирующею строку и вывести ее в textBoxOut.</value>
+ Дан файл InPutFileTask7V30.csv в котором хранится матрица целочисленных значений. Загрузить файл через openFileDialog в объект dataGridViewIn. Изменить в первом столбце значения не равные 4 на 8 . Результат вывести в объект dataGridViewOut. Сохранить результат в файл OutPutFileTask7.csv через saveFileDialog.</value>
   </data>
+  <data name="buttonSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        SUVORK5CYII=
+</value>
+  </data>
+  <metadata name="openFileDialogTask.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>253, 17</value>
+  </metadata>
+  <metadata name="saveFileDialogMatrix.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>408, 17</value>
+  </metadata>
 </root>

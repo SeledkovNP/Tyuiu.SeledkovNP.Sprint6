@@ -41,6 +41,9 @@
             groupBoxIn = new GroupBox();
             textBoxResult = new TextBox();
             groupBoxOut = new GroupBox();
+            buttonSave = new Button();
+            openFileDialogTask = new OpenFileDialog();
+            saveFileDialogMatrix = new SaveFileDialog();
             groupBoxIn.SuspendLayout();
             SuspendLayout();
             // 
@@ -71,7 +74,7 @@
             Clik_open.Name = "Clik_open";
             Clik_open.Size = new Size(62, 54);
             Clik_open.TabIndex = 2;
-            toolTip1.SetToolTip(Clik_open, " Открыт ваш вайл ");
+            toolTip1.SetToolTip(Clik_open, "Решение");
             Clik_open.UseVisualStyleBackColor = true;
             Clik_open.Click += Clik_open_Click;
             // 
@@ -92,7 +95,7 @@
             textBox1.BackColor = SystemColors.Menu;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.ForeColor = Color.Black;
-            textBox1.Location = new Point(1, 72);
+            textBox1.Location = new Point(12, 72);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
@@ -107,7 +110,7 @@
             textVod.BackColor = SystemColors.Menu;
             textVod.BorderStyle = BorderStyle.None;
             textVod.ForeColor = Color.Black;
-            textVod.Location = new Point(12, 118);
+            textVod.Location = new Point(12, 174);
             textVod.Multiline = true;
             textVod.Name = "textVod";
             textVod.ReadOnly = true;
@@ -121,7 +124,7 @@
             textVid.BackColor = SystemColors.Menu;
             textVid.BorderStyle = BorderStyle.None;
             textVid.ForeColor = Color.Black;
-            textVid.Location = new Point(414, 118);
+            textVid.Location = new Point(414, 174);
             textVid.Multiline = true;
             textVid.Name = "textVid";
             textVid.ReadOnly = true;
@@ -133,9 +136,9 @@
             // groupBoxIn
             // 
             groupBoxIn.Controls.Add(textBoxResult);
-            groupBoxIn.Location = new Point(12, 141);
+            groupBoxIn.Location = new Point(12, 197);
             groupBoxIn.Name = "groupBoxIn";
-            groupBoxIn.Size = new Size(377, 297);
+            groupBoxIn.Size = new Size(377, 241);
             groupBoxIn.TabIndex = 8;
             groupBoxIn.TabStop = false;
             groupBoxIn.Enter += groupBox1_Enter;
@@ -151,18 +154,34 @@
             // 
             // groupBoxOut
             // 
-            groupBoxOut.Location = new Point(414, 141);
+            groupBoxOut.Location = new Point(414, 197);
             groupBoxOut.Name = "groupBoxOut";
-            groupBoxOut.Size = new Size(374, 297);
+            groupBoxOut.Size = new Size(374, 241);
             groupBoxOut.TabIndex = 9;
             groupBoxOut.TabStop = false;
             groupBoxOut.Enter += groupBox2_Enter;
+            // 
+            // buttonSave
+            // 
+            buttonSave.Image = (Image)resources.GetObject("buttonSave.Image");
+            buttonSave.Location = new Point(139, 12);
+            buttonSave.Name = "buttonSave";
+            buttonSave.Size = new Size(55, 54);
+            buttonSave.TabIndex = 10;
+            toolTip1.SetToolTip(buttonSave, "Сохранит");
+            buttonSave.UseVisualStyleBackColor = true;
+            buttonSave.Click += button1_Click;
+            // 
+            // openFileDialogTask
+            // 
+            openFileDialogTask.FileName = "openFileDialog2";
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(799, 473);
+            Controls.Add(buttonSave);
             Controls.Add(groupBoxOut);
             Controls.Add(groupBoxIn);
             Controls.Add(textVid);
@@ -172,7 +191,7 @@
             Controls.Add(Clik_fiels);
             Controls.Add(textBox1);
             Name = "FormMain";
-            Text = "Seledkov Nikita SMAPTb-24-1 / Task 6 V22";
+            Text = "Seledkov Nikita SMAPTb-24-1 / Task 7 V30";
             Load += FormMain_Load;
             groupBoxIn.ResumeLayout(false);
             groupBoxIn.PerformLayout();
@@ -193,5 +212,8 @@
         private GroupBox groupBoxIn;
         private GroupBox groupBoxOut;
         private TextBox textBoxResult;
+        private Button buttonSave;
+        private OpenFileDialog openFileDialogTask;
+        private SaveFileDialog saveFileDialogMatrix;
     }
 }

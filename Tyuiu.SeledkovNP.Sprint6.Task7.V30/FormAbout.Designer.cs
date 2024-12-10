@@ -55,6 +55,7 @@
             textBox1.Size = new Size(416, 147);
             textBox1.TabIndex = 1;
             textBox1.Text = resources.GetString("textBox1.Text");
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // pictureBox1
             // 

@@ -21,5 +21,10 @@ namespace Tyuiu.SeledkovNP.Sprint6.Task6.V22
         {
             this.Close();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
