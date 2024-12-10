@@ -19,7 +19,7 @@ namespace Tyuiu.SeledkovNP.Sprint6.Task6.V22.Lib
                     {
                     resStr += " " + line.Split(' ')[0];
                     
-
+                    
                     }
 
 
