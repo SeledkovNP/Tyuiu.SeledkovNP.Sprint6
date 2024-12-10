@@ -26,7 +26,7 @@ namespace Tyuiu.SeledkovNP.Sprint6.Task7.V30.Lib
             //     }
             // }
 
-            // Обработка матрицы
+            // Обработка матрицы 
             for (int i = 0; i < rows; i++)
             {
                 if (matrix[i, 0] != 4)
