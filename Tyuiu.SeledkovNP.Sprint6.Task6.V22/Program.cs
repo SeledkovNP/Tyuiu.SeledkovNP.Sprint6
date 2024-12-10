@@ -1,3 +1,4 @@
+using Tyuiu.SeledkovNP.Sprint6.Task6.V22.Lib;
 namespace Tyuiu.SeledkovNP.Sprint6.Task6.V22
 {
     internal static class Program
@@ -11,7 +12,11 @@ namespace Tyuiu.SeledkovNP.Sprint6.Task6.V22
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new FormMain());
+
+            
+
+
         }
     }
 }
