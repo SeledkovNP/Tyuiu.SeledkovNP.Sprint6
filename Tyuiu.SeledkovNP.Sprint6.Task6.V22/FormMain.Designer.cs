@@ -98,6 +98,7 @@
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(800, 94);
             textBox1.TabIndex = 0;
+            textBox1.TabStop = false;
             textBox1.Text = resources.GetString("textBox1.Text");
             textBox1.TextChanged += textBox1_TextChanged;
             // 
